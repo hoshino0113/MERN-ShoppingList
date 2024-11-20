@@ -34,10 +34,10 @@ class ShoppingList extends Component {
                 <ListGroup>
                     <TransitionGroup className="ShoppingList"> {
                         items.map(({id, name}) => (
-                            <CSSTransition key = {id} timeout={5} classNames={"fade"}>
+                            <CSSTransition key = {id} timeout={500} classNames={"fade"}>
                                 <ListGroupItem>
                                     <Button 
-                                    className = 'remove-btn' 
+                                    className = "remove-btn"
                                     color="danger" 
                                     size='sm' 
                                     onClick={() => {//replace with a actual delete request later
