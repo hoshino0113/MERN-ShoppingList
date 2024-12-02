@@ -9,7 +9,6 @@ import {
     Label,
     Input
 }from 'reactstrap';
-import { v4 as uuidv4 } from 'uuid';
 
 import {connect} from 'react-redux';
 import {addItem} from '../actions/itemActions'
@@ -36,7 +35,7 @@ class ItemModal extends Component {
     onSubmit = (e) => {
         e.preventDefault(); //prevent the form from submitting
         const newItem = {
-            id : uuidv4(), //id determined by mongoDB
+            //id : uuidv4(), //id determined by mongoDB
             name: this.state.name
         }
 

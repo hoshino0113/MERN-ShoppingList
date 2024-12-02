@@ -11,6 +11,10 @@ router.get('/', (req, res)=> {
     Item.find()
     .sort({date: -1})
     .then(items=> res.json(items))
+    .catch(err => {
+        console.error('Error fetching items in API:', err.message);
+        res.status(500).json({ success: false, error: 'Server Error' });
+    });
 });
 
 //@route POST api/items
