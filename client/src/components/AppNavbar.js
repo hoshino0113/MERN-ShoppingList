@@ -31,7 +31,7 @@ class AppNavbar extends Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="https://google.ca">Google Search</NavLink>
+                                <NavLink href="https://github.com/hoshino0113/MERN-ShoppingList">Github</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
@@ -45,3 +45,4 @@ class AppNavbar extends Component {
 
 
 export default AppNavbar;
+//change user
